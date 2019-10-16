@@ -1,0 +1,39 @@
+.link {
+	display: flex;
+	font-size: 12px;
+}
+
+.link img {
+	padding-bottom: 5px;
+}
+
+.link.vertical {
+	color: #049C7A;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.link.vertical.active {
+	color: #FFF;
+}
+
+.link.vertical:not(.active) img {
+	filter: invert(65%);
+	opacity: 0.5;
+}
+
+.link.horizontal {
+	align-items: center;
+	color: #737689;
+	text-transform: uppercase;
+}
+
+.link.horizontal img {
+	margin-right: 12px;
+}
+
+.link.horizontal.active {
+	opacity: 0.5;
+}

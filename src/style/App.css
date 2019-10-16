@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'din_condensedbold';
+    src: url('../fonts/din_condensed_bold-webfont.woff2') format('woff2'),
+         url('../fonts/din_condensed_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/avenir-lt-45-book.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+	font-family: 'Avenir';
+	background: #F5F7FA;
+	display: grid;
+	grid-template-columns: 112px auto;
+	grid-template-rows: 80px auto;
+	grid-template-areas: 
+		"sidebar header"
+		"sidebar content";
+    height: 100vh;
+	width: 100vw;
+}
+
+.header {
+	border-bottom: 1px solid #e4e5e8;
+	color: #737689;
+	font-size: 13px;
+	grid-area: header;
+	padding: 30px 45px;
+}
+
+.header span{
+	padding-right: 25px;
+}
+
+.sidebar {
+	background: #09CFA3;
+	border: 1px solid #09cfa3;
+	grid-area: sidebar;
+	display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.content {
+	grid-area: content;
+	padding: 30px 45px;
+}

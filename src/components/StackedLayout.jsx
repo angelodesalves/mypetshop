@@ -2,10 +2,13 @@ import React from 'react'
 
 function StackedLayout(props) {
 	return (
-		<div>
-			{props.children.map(child => {
+		<div className={props.className}>
+			{props.children.map((child, index) => {
 				return (
-					<div style={{paddingBottom: props.spacing}}>
+					<div
+						key={index}
+						style={{paddingBottom: props.spacing}}
+					>
 						{child}
 					</div>
 				)

@@ -1,10 +1,11 @@
 .link {
+	cursor: pointer;
 	display: flex;
 	font-size: 12px;
 }
 
 .link img {
-	padding-bottom: 5px;
+	padding: 5px 0;
 }
 
 .link.vertical {
@@ -27,6 +28,7 @@
 .link.horizontal {
 	align-items: center;
 	color: #737689;
+	margin-right: 32px;
 	text-transform: uppercase;
 }
 
@@ -34,6 +36,6 @@
 	margin-right: 12px;
 }
 
-.link.horizontal.active {
+.link.horizontal:not(.active) {
 	opacity: 0.5;
 }

@@ -1,23 +1,43 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Link from './Link';
 import ic_totais from '../icons/ic_totais.svg';
 import ic_clientes from '../icons/ic_clientes.svg';
 import StackedLayout from './StackedLayout';
+import Clients from '../pages/Clients';
+import Totals from '../pages/Totals';
 
 function Sidebar() {
+	const [page, setPage] = useState('Clients');
+
+	const getPage = () => {
+		if (page === 'Totals') {
+			return <Totals />;
+		}
+
+		return <Clients />;
+	}
+
 	return (
 		<div className={'content'}>
-		<StackedLayout spacing='25px'>
-			<Link
-				icon={ic_totais}
-				text={'Totais'}
-				active
-			/>
-			<Link
-				icon={ic_clientes}
-				text={'Clientes'}
-			/>
-		</StackedLayout>
+			<div>
+				<StackedLayout spacing='20px' className={'pageButtons'}>
+					<Link
+						icon={ic_totais}
+						text={'Totais'}
+						onClick={() => setPage('Totals')}
+						active={page === 'Totals'}
+					/>
+					<Link
+						icon={ic_clientes}
+						text={'Clientes'}
+						onClick={() => setPage('Clients')}
+						active={page === 'Clients'}
+					/>
+				</StackedLayout>
+			</div>
+			<div className={'wrapper'}>
+				{getPage()}
+			</div>
 		</div>
 	)
 }

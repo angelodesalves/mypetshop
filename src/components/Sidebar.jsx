@@ -9,7 +9,9 @@ function Sidebar() {
 	return (
 		<div className={'sidebar'}>
 			<StackedLayout spacing='35px'>
-				<img src={logo} alt="logo" />
+				<div className={'logoWrapper'}>
+					<img src={logo} alt="logo" />
+				</div>
 				<Link
 					icon={ic_dashboard}
 					text={'Meu faturamento'}

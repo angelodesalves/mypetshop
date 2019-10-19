@@ -1,0 +1,36 @@
+.tableWrapper {
+	height: 100%;
+    width: 100vw;
+    overflow: auto;
+    margin-left: -16px;
+}
+	
+
+.table {
+	border-spacing: 0;
+	width: 100%;
+}
+
+.table th, .table td {
+	font-size: 12px;
+	padding: 16px;
+	text-transform: uppercase;
+}
+
+.table th {
+	color: #09CFA3;
+	font-size: 12px;
+	text-align: left;
+}
+
+.table td {
+	color: #737689;
+}
+
+.table tr {
+	padding: 0 7px;
+}
+
+.table tbody tr:nth-child(odd) {
+	background: #E5E9EF;
+}

@@ -1,0 +1,21 @@
+.radio-button {
+	background: #09D0A3;
+	border-radius: 20px;
+	box-sizing: border-box;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	font-family: 'din';
+	font-size: 16px;
+	margin-right: 16px;
+	min-width: 80px;
+	opacity: 0.5;
+	padding: 10px 20px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.25s;
+}
+
+.radio-button.active {
+	opacity: 1;
+}

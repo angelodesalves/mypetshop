@@ -1,8 +1,8 @@
 # ![Image of MyPetshop](https://raw.githubusercontent.com/angelodesalves/mypetshop/master/logo.png) MyPetshop
 
 This project is a technical challenge for eyemobile.
-* Technologies: It is based on CRA, using html, css and react (hooks);
-* Data control: It was decided to use useReducer (react hooks), because for the size of the project it would be rocket science to use Redux. Another point is that it facilitates the maintainability of the project;
+* Technologies: Based on CRA, using html, css and react (hooks);
+* Data control: It was decided to use useReducer (React hooks) instead Redux, considering the project size. Another point is that it facilitates the maintainability of the project;
 * Design: Based on passed mockup, having as a prerequisite mobile compatibility.
 
 ## Desktop
@@ -12,6 +12,7 @@ This project is a technical challenge for eyemobile.
 
 ## Mobile
 ![Mobile clients list](https://github.com/angelodesalves/mypetshop/blob/master/mobile%20-%20clients.gif?raw=true)
+
 ![Mobile graph filter](https://github.com/angelodesalves/mypetshop/blob/master/mobile%20-%20graph%20filter.gif?raw=true)
 
 ## Available Scripts

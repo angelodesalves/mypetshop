@@ -1,8 +1,7 @@
-import React, { useState, useMemo } from 'react'
+import React, { useState } from 'react'
 import StackedLayout from '../components/StackedLayout';
 import Table from '../components/Table';
 import Filter from '../components/Filter';
-import data from '../json/data';
 
 const headers = ['Id', 'Nome', 'Documento', 'Data de nascimento', 'Cliente desde', 'Última compra'];
 
@@ -19,7 +18,7 @@ const getRow = data => {
 	);
 };
 
-function Clients() {
+function Clients({data}) {
 	const [filter, setFilter] = useState('');
 
 	const getList = () => {

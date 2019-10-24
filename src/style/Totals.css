@@ -1,0 +1,59 @@
+.page-totals {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'din';
+	padding-top: 35px;
+	text-transform: uppercase;
+}
+
+.page-totals .title {
+	color: #737689;
+	font-size: 25px;
+}
+
+.page-totals .total {
+	align-items: end;
+	color: #09D0A3;
+	display: flex;
+	font-family: 'Avenir';
+	font-size: 70px;
+}
+
+.page-totals .total small {
+	font-size: 35px;
+	padding: 10px;
+}
+
+.content-graphs {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 30px;
+}
+
+.content-graphs .line {
+	background: #e4e5e8;
+	height: 1px;
+	width: 100%;
+	margin: 60px 0 36px;
+}
+
+.barGraph, .pieGraph {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.pieGraph {
+	margin-right: 75px;
+}
+
+@media (max-width: 1000px) {
+	.content-graphs {
+		flex-direction: column;
+	}
+
+	.pieGraph {
+		margin-right: 0px;
+	}
+}

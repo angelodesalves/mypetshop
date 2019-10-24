@@ -1,8 +1,6 @@
 .tableWrapper {
 	height: 100%;
-    width: 100vw;
     overflow: auto;
-    margin-left: -16px;
 }
 	
 
@@ -33,4 +31,11 @@
 
 .table tbody tr:nth-child(odd) {
 	background: #E5E9EF;
+}
+
+@media (max-width: 1200px) {
+	.tableWrapper {
+		margin-left: -16px;
+		width: 100vw;
+	}
 }

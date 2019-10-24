@@ -10,7 +10,7 @@ function RadioButton({data, active = 0, onChange}) {
 
 	const onClick = index => {
 		setActiveButton(index);
-		onChange && onChange();
+		onChange && onChange(index);
 	}
 
 	const getButtons = () => {
@@ -26,7 +26,7 @@ function RadioButton({data, active = 0, onChange}) {
 	}
 
 	return (
-		<div>
+		<div className={'radio-button-container'}>
 			{getButtons()}
 		</div>
 	)

@@ -1,3 +1,13 @@
+.radio-button-container {
+	display: flex;
+    flex-wrap: nowrap;
+    margin-left: -16px;
+    padding: 0 16px;
+    width: 100vw;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
 .radio-button {
 	background: #09D0A3;
 	border-radius: 20px;
@@ -14,6 +24,7 @@
 	text-align: center;
 	text-transform: uppercase;
 	transition: 0.25s;
+	flex: 1 0 auto;
 }
 
 .radio-button.active {

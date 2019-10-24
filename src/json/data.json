@@ -167,6 +167,22 @@
       "type": "Despesas",
       "product_name": "Folha de pagamento",
       "time": "2019-06-10 10:00:40.000000"
+    },
+    {
+      "id": 6513,
+      "amount": 2711.90,
+      "product_id": 29,
+      "type": "Despesas",
+      "product_name": "Banho & Tosa",
+      "time": "2019-10-23 10:00:40.000000"
+    },
+    {
+      "id": 6514,
+      "amount": 2711.90,
+      "product_id": 29,
+      "type": "Despesas",
+      "product_name": "Medicamentos",
+      "time": "2019-10-20 10:00:40.000000"
     }
   ],
   "customers": [

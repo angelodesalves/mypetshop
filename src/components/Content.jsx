@@ -6,15 +6,19 @@ import StackedLayout from './StackedLayout';
 import Clients from '../pages/Clients';
 import Totals from '../pages/Totals';
 
-function Sidebar() {
-	const [page, setPage] = useState('Clients');
+function Content(props) {
+	const [page, setPage] = useState('Totals');
 
 	const getPage = () => {
+		var Cmp = Clients;
+
 		if (page === 'Totals') {
-			return <Totals />;
+			Cmp = Totals;
 		}
 
-		return <Clients />;
+		return <Cmp
+			{...props}
+		/>;
 	}
 
 	return (
@@ -42,4 +46,4 @@ function Sidebar() {
 	)
 }
 
-export default Sidebar
+export default Content

@@ -22,8 +22,8 @@ function Table({data = [], headers = [], getRow}) {
 				<thead>
 					<tr>
 						{
-							headers.map(item => {
-								return <th>{item}</th>
+							headers.map((item, index) => {
+								return <th key={index}>{item}</th>
 							})
 						}
 					</tr>

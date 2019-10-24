@@ -1,16 +1,49 @@
 @font-face {
-    font-family: 'din';
-    src: url('../fonts/din_condensed_bold-webfont.woff2') format('woff2'),
-         url('../fonts/din_condensed_bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'din';
+	src: url('../fonts/din_condensed_bold-webfont.woff2') format('woff2'),
+		 url('../fonts/din_condensed_bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Avenir';
-    src: url('../fonts/avenir-lt-45-book.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'Avenir';
+	src: url('../fonts/Avenir-Medium.woff2') format('woff2'),
+		url('../fonts/Avenir-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir';
+	src: url('../fonts/Avenir-Light.woff2') format('woff2'),
+		url('../fonts/Avenir-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir';
+	src: url('../fonts/Avenir-Black.woff2') format('woff2'),
+		url('../fonts/Avenir-Black.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir';
+	src: url('../fonts/Avenir-Roman.woff2') format('woff2'),
+		url('../fonts/Avenir-Roman.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir';
+	src: url('../fonts/Avenir-Heavy.woff2') format('woff2'),
+		url('../fonts/Avenir-Heavy.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
 }
 
 .container {
@@ -22,7 +55,7 @@
 	grid-template-areas: 
 		"sidebar header"
 		"sidebar content";
-    height: 100%;
+	height: 100%;
 	width: 100%;
 }
 
@@ -30,8 +63,10 @@
 	border-bottom: 1px solid #e4e5e8;
 	color: #737689;
 	font-size: 13px;
+	font-weight: 900;
 	grid-area: header;
 	padding: 30px 45px;
+	text-transform: uppercase;
 }
 
 .header span{
@@ -47,8 +82,8 @@
 	border: 1px solid #09cfa3;
 	grid-area: sidebar;
 	display: flex;
-    flex-direction: column;
-    padding: 20px;
+	flex-direction: column;
+	padding: 20px;
 }
 
 .content {

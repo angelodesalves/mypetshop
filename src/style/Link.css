@@ -29,6 +29,8 @@
 .link.horizontal {
 	align-items: center;
 	color: #737689;
+	font-size: 16px;
+	font-weight: 800;
 	margin-right: 32px;
 	text-transform: uppercase;
 }

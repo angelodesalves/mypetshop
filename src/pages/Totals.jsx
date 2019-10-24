@@ -119,7 +119,7 @@ function Totals({data, dispatch}) {
 			formatBalanceGraphData(list, setBarGraphData);
 		}
 
-		setTotal(total);
+		setTotal(total.toString().replace('.', ','));
 	}
 
 	useEffect(() => {

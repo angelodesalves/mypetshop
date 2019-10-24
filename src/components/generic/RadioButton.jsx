@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../style/RadioButton.css';
+import './RadioButton.css';
 
 function RadioButton({data, active = 0, onChange}) {
 	const [activeButton, setActiveButton] = useState(active);

@@ -1,7 +1,7 @@
 import React, { useReducer } from 'react';
-import Sidebar from './components/Sidebar';
-import Header from './components/Header';
-import Content from './components/Content';
+import Sidebar from './components/structure/Sidebar';
+import Header from './components/structure/Header';
+import Content from './components/structure/Content';
 import json from './json/data';
 import './style/App.css';
 
@@ -20,7 +20,6 @@ function App() {
 
 	return (
 		<>
-			<meta name="viewport" content="width=device-width, user-scalable=no" />
 			<div className={'container'}>
 				<Sidebar />
 				<Header />

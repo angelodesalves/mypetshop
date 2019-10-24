@@ -1,6 +1,6 @@
 import React from 'react'
 import { VictoryPie } from 'victory';
-import Subtitle from '../components/Subtitle';
+import Subtitle from '../generic/Subtitle';
 
 const graphTitleStyle = {
 	fontFamily: 'din',

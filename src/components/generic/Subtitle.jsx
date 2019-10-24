@@ -1,5 +1,5 @@
 import React from 'react'
-import '../style/Subtitle.css';
+import './Subtitle.css';
 
 function Subtitle({data}) {
 	const getList = () => {

@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import Link from './Link';
-import ic_totais from '../icons/ic_totais.svg';
-import ic_clientes from '../icons/ic_clientes.svg';
-import StackedLayout from './StackedLayout';
+import Link from '../generic/Link';
+import StackedLayout from '../generic/StackedLayout';
 import Clients from '../pages/Clients';
 import Totals from '../pages/Totals';
+import ic_totais from '../../icons/ic_totais.svg';
+import ic_clientes from '../../icons/ic_clientes.svg';
 
 function Content(props) {
 	const [page, setPage] = useState('Totals');

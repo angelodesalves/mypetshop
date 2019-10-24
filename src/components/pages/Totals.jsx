@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import PieGraph from '../pages/PieGraph';
 import BarGraph from '../pages/BarGraph';
-import RadioButton from '../components/RadioButton';
-import '../style/Totals.css';
+import RadioButton from '../generic/RadioButton';
+import './Totals.css';
 var moment = require('moment');
 
 const buttonList = [

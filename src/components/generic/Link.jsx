@@ -1,5 +1,5 @@
 import React from 'react'
-import '../style/Link.css';
+import './Link.css';
 
 function Link({icon, text, active, type = 'horizontal', onClick}) {
 	const getClass = (type, active) => {

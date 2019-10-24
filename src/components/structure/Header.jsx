@@ -1,5 +1,5 @@
 import React from 'react'
-import ic_menu from '../icons/ic_menu.svg';
+import ic_menu from '../../icons/ic_menu.svg';
 
 function Sidebar() {
 	return (

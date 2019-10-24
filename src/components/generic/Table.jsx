@@ -1,5 +1,5 @@
 import React from 'react'
-import '../style/Table.css';
+import './Table.css';
 
 const getBody = (data, getRow) => {
 	return data.map(item => {

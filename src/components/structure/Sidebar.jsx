@@ -1,9 +1,9 @@
 import React from 'react'
-import Link from './Link';
-import StackedLayout from './StackedLayout';
-import logo from '../icons/ic_logo.svg';
-import ic_dashboard from '../icons/ic_dashboard.svg';
-import ic_cadastro from '../icons/ic_cadastro.svg';
+import Link from '../generic/Link';
+import StackedLayout from '../generic/StackedLayout';
+import logo from '../../icons/ic_logo.svg';
+import ic_dashboard from '../../icons/ic_dashboard.svg';
+import ic_cadastro from '../../icons/ic_cadastro.svg';
 
 function Sidebar() {
 	return (

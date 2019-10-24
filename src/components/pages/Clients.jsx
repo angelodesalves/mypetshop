@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import StackedLayout from '../components/StackedLayout';
-import Table from '../components/Table';
-import Filter from '../components/Filter';
+import StackedLayout from '../generic/StackedLayout';
+import Table from '../generic/Table';
+import Filter from '../generic/Filter';
 
 const headers = ['Id', 'Nome', 'Documento', 'Data de nascimento', 'Cliente desde', 'Última compra'];
 

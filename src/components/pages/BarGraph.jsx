@@ -4,7 +4,7 @@ import {
 	VictoryBar,
 	Bar
 } from 'victory';
-import Subtitle from '../components/Subtitle';
+import Subtitle from '../generic/Subtitle';
 
 const graphTitleStyle = {
 	fontFamily: 'din',

@@ -23,7 +23,7 @@ const graphTitleStyle = {
 	fill: '#737689'
 }
 
-const formatSevicesGraphData = (list, setPieGraphData) => {
+const formatServicesGraphData = (list, setPieGraphData) => {
 	let totals = {
 		'Banho & Tosa': 0,
 		'Consultas': 0,
@@ -54,7 +54,6 @@ const formatBalanceGraphData = (list, setBarGraphData) => {
 
 	list.forEach((value) => {
 		if (value.type === 'Receitas') {
-			console.log(`Total: ${revenue} + valor: ${value.amount * 100} montante: ${revenue + value.amount * 100}`);
 			revenue = revenue + value.amount * 100
 		} else if (value.type === 'Despesas') {
 			expenses = expenses + value.amount * 100
@@ -90,6 +89,7 @@ const getFilteredList = ({graphicFilter, transactions}) => {
 }
 
 function Totals({data, dispatch}) {
+	const [shouldRenderGraphs, setShouldRenderGraphs] = useState(true);
 	const [total, setTotal] = useState(23423.23);
 	const [pieGraphData, setPieGraphData] = useState([
 		{
@@ -115,16 +115,33 @@ function Totals({data, dispatch}) {
 
 		if (list.length > 0) {
 			total = list.reduce((total, item) => total + item.amount * 100, 0) / 100
-			formatSevicesGraphData(list, setPieGraphData);
+			formatServicesGraphData(list, setPieGraphData);
 			formatBalanceGraphData(list, setBarGraphData);
+			!shouldRenderGraphs && setShouldRenderGraphs(true);
+
+		} else {
+			setShouldRenderGraphs(false);
 		}
 
-		setTotal(total.toString().replace('.', ','));
+		setTotal(total.toFixed(2).replace('.', ','));
 	}
 
 	useEffect(() => {
 		calcTotal(data.graphicFilter);
 	}, [data.graphicFilter]);
+
+	const getGraphs = () => {
+		if (!shouldRenderGraphs) {
+			return "Não há dados suficientes para mostrar em gráfico"
+		}
+
+		return (
+			<>
+				<PieGraph pieGraphData={pieGraphData} />
+				<BarGraph barGraphData={barGraphData} />
+			</>
+		);
+	}
 
 	return (
 		<>
@@ -142,8 +159,7 @@ function Totals({data, dispatch}) {
 
 				<span className={'content-graphs'}>
 					<div className={'line'} />
-					<PieGraph pieGraphData={pieGraphData} />
-					<BarGraph barGraphData={barGraphData} />
+					{getGraphs()}
 				</span>
 			</div>
 		</>

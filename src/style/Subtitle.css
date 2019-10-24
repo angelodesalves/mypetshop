@@ -1,0 +1,30 @@
+.subtitle {
+	color: #4A4A4A;
+	font-family: avenir;
+	max-width: 300px;
+	width: 100%;
+}
+
+.subtitle .subtitle-item {
+	display: grid;
+	grid-template-columns: 25px 1fr 1fr;
+	margin-bottom: 32px;
+}
+
+.subtitle .icon {
+	border-radius: 9px;
+	height: 18px;
+	width: 18px;
+}
+
+.subtitle .name {
+	font-size: 10px;
+	line-height: 18px;
+}
+
+.subtitle .value {
+	font-size: 12px;
+	font-weight: 900;
+	line-height: 18px;
+	text-align: end;
+}

@@ -4,6 +4,7 @@ import {
 	VictoryBar,
 	Bar
 } from 'victory';
+import Subtitle from '../components/Subtitle';
 
 const graphTitleStyle = {
 	fontFamily: 'din',
@@ -12,9 +13,23 @@ const graphTitleStyle = {
 }
 
 function BarGraph({barGraphData}) {
+	var subtitleData;
+
+	const getPercentage = (value) => {
+		let total = barGraphData[0].y + barGraphData[1].y,
+			percentage = value / total * 100;
+
+		return percentage.toFixed(2);
+	}
+
 	if (!barGraphData) {
 		return null;
 	}
+
+	subtitleData = [
+		{ color: '#01dcaa', name: 'Receitas', value: `R$ ${barGraphData[0].y} (${getPercentage(barGraphData[0].y)}%)` },
+		{ color: '#fe4f64', name: 'Despesas', value: `R$ ${barGraphData[1].y} (${getPercentage(barGraphData[1].y)}%)` }
+	];
 
 	return (
 		<div className={'barGraph'}>
@@ -44,6 +59,9 @@ function BarGraph({barGraphData}) {
 					}}
 				/>
 			</VictoryChart>
+			<Subtitle
+				data={subtitleData}
+			/>
 		</div>
 	)
 }
